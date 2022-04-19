@@ -1,0 +1,20 @@
+@import '~app-assets/styles/index.scss';
+
+@import './popover';
+@import './customMenuTreeStyle.scss';
+
+::-webkit-scrollbar {
+  width: getpx(8);
+  height: getpx(8);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dbdde2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}

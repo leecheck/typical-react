@@ -1,0 +1,9 @@
+@import '~app-assets/styles/index.scss';
+
+$popover-prefix-cls: #{$antd-prefix}-popover;
+
+.#{$popover-prefix-cls} {
+  .#{$popover-prefix-cls}-inner-content {
+    padding: 0;
+  }
+}

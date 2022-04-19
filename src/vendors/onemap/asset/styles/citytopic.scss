@@ -1,0 +1,33 @@
+.city-topic {
+  font-size: 18px;
+  width: 200px;
+  height: 150px;
+  background: #16466f;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: -1px 0px 4px #02ffff, 0px -1px 4px #02ffff, 1px 0px 4px #02ffff, 0px 1px 4px #02ffff;
+}
+
+.tooltip-row {
+  float: left;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  margin: 4px 0;
+  padding: 0 0 0 4px;
+  transform: skewX(-10deg);
+  font-family: PingFangSC-Regular;
+}
+
+.tooltip-title {
+  float: left;
+  border-left: 3px solid #ffeb00;
+  padding-left: 8px;
+  color: white;
+}
+
+.tooltip-num {
+  float: right;
+  font-weight: 600;
+  color: white;
+}

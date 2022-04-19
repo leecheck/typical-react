@@ -1,0 +1,153 @@
+//树控件样式全局调整
+$baseSpace: 24;
+
+.customMenuTree {
+  .ant-tree li span.ant-tree-switcher {
+    position: absolute;
+    line-height: 34px;
+  }
+  .ant-tree li .ant-tree-node-content-wrapper {
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 0px;
+  }
+  ///////////////////////
+  .ant-tree > li {
+    > .ant-tree-switcher {
+      left: getpx($baseSpace * 0 + 6);
+    }
+    > .ant-tree-node-content-wrapper {
+      padding-left: getpx($baseSpace * 1 + 6);
+    }
+    //////////////////////
+    > .ant-tree-child-tree > li {
+      > .ant-tree-switcher {
+        left: getpx($baseSpace * 1);
+      }
+      > .ant-tree-node-content-wrapper {
+        padding-left: getpx($baseSpace * 2);
+      }
+      > .ant-tree-child-tree > li {
+        > .ant-tree-switcher {
+          left: getpx($baseSpace * 2);
+        }
+        > .ant-tree-node-content-wrapper {
+          padding-left: getpx($baseSpace * 3);
+        }
+        > .ant-tree-child-tree > li {
+          > .ant-tree-switcher {
+            left: getpx($baseSpace * 3);
+          }
+          > .ant-tree-node-content-wrapper {
+            padding-left: getpx($baseSpace * 4);
+          }
+          > .ant-tree-child-tree > li {
+            > .ant-tree-switcher {
+              left: getpx($baseSpace * 4);
+            }
+            > .ant-tree-node-content-wrapper {
+              padding-left: getpx($baseSpace * 5);
+            }
+            > .ant-tree-child-tree > li {
+              > .ant-tree-switcher {
+                left: getpx($baseSpace * 5);
+              }
+              > .ant-tree-node-content-wrapper {
+                padding-left: getpx($baseSpace * 6);
+              }
+              > .ant-tree-child-tree > li {
+                > .ant-tree-switcher {
+                  left: getpx($baseSpace * 6);
+                }
+                > .ant-tree-node-content-wrapper {
+                  padding-left: getpx($baseSpace * 7);
+                }
+                > .ant-tree-child-tree > li {
+                  > .ant-tree-switcher {
+                    left: getpx($baseSpace * 7);
+                  }
+                  > .ant-tree-node-content-wrapper {
+                    padding-left: getpx($baseSpace * 8);
+                  }
+                  > .ant-tree-child-tree > li {
+                    > .ant-tree-switcher {
+                      left: getpx($baseSpace * 8);
+                    }
+                    > .ant-tree-node-content-wrapper {
+                      padding-left: getpx($baseSpace * 9);
+                    }
+                    > .ant-tree-child-tree > li {
+                      > .ant-tree-switcher {
+                        left: getpx($baseSpace * 9);
+                      }
+                      > .ant-tree-node-content-wrapper {
+                        padding-left: getpx($baseSpace * 10);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  ////////////////////////////////////
+  .ant-tree li ul {
+    overflow: hidden;
+    padding: 0;
+  }
+  .ant-tree li {
+    padding: 0;
+    position: relative;
+  }
+  .ant-tree > li:first-child {
+    padding-top: 0;
+  }
+  .ant-tree-child-tree > li:first-child {
+    padding-top: 0;
+  }
+
+  li.ant-tree-treenode-disabled > span:not(.ant-tree-switcher),
+  li.ant-tree-treenode-disabled > .ant-tree-node-content-wrapper,
+  li.ant-tree-treenode-disabled > .ant-tree-node-content-wrapper span {
+    color: #bfc2c5;
+  }
+  .ant-tree-title {
+    color: #bfc2c5;
+  }
+  .ant-tree-switcher-icon {
+    color: #bfc2c5;
+  }
+
+  .ant-tree li .ant-tree-node-content-wrapper:hover {
+    background-color: $left-menu-hover-color;
+  }
+  .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background-color: $left-menu-selected-color;
+  }
+  .ant-tree li.ant-tree-treenode-selected {
+    .ant-tree-title,
+    .ant-tree-switcher-icon {
+      color: #fff;
+    }
+  }
+  .ant-menu-vertical .ant-menu-item:not(:last-child),
+  .ant-menu-vertical-left .ant-menu-item:not(:last-child),
+  .ant-menu-vertical-right .ant-menu-item:not(:last-child),
+  .ant-menu-inline .ant-menu-item:not(:last-child) {
+    margin: 0;
+  }
+  .ant-menu-vertical .ant-menu-item,
+  .ant-menu-vertical-left .ant-menu-item,
+  .ant-menu-vertical-right .ant-menu-item,
+  .ant-menu-inline .ant-menu-item,
+  .ant-menu-vertical .ant-menu-submenu-title,
+  .ant-menu-vertical-left .ant-menu-submenu-title,
+  .ant-menu-vertical-right .ant-menu-submenu-title,
+  .ant-menu-inline .ant-menu-submenu-title {
+    margin: 0;
+  }
+}

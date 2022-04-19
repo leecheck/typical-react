@@ -1,5 +1,12 @@
-const Config = {
-    
-};
+export const ConfigManager = {
+  getAppConfig: (key) => {
+    switch (key) {
+      case 'systemName':
+        return 'Demo';
+        break;
 
-export default Config;
+      default:
+        break;
+    }
+  },
+};

@@ -9,11 +9,7 @@ import * as Cookie from 'js-cookie';
  * @param {boolean} [isRemember=true] 是否记住
  * @param {string} [expires=7] 过期时间，仅当isRemember时有效
  */
-function setLoginState(
-  token: string,
-  isRemember: boolean = true,
-  expires: number = 7,
-) {
+function setLoginState(token: string, isRemember: boolean = true, expires: number = 7) {
   // 存放在localStorage中
   localStorage.setItem('keep-login', JSON.stringify(isRemember));
 

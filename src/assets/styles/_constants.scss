@@ -1,0 +1,54 @@
+// 基础
+
+// 基础调色板
+// key对应basic.style.js中colors的key值
+
+$background-dark-color: #1b222e;
+$background-color: #e5e9ec; // 背景色
+
+$component-background-color: #424f66; // 组件背景色
+$background-color-hover: #c8d6e4; // 背景hover时的颜色
+
+$component-foreground-color: #0a7bff;
+
+$text-color: #576574; // 文字颜色
+$text-second-color: #8395a7; // 文字的辅助颜色
+$text-dark-color: #8395a7;
+
+$dark-gray: #3e455f;
+
+$antd-prefix: 'ant'; // 本来想通过less-loader修改ant-prefix，但是修改之后没有用，所以这里这个值也别修改
+
+$background-normalColor: #f2f4f5; // 背景色
+
+// 圆角
+$card-radius: 4px;
+
+// index
+$low-layer-index: 1;
+$mid-layer-index: 10;
+$hight-layer-index: 99;
+$top-most-layer-index: 999;
+
+// 阴影
+$shadow-color: #c8d6e4;
+
+$base-font-size: 14px;
+$middle-font-size: 16px;
+$larger-font-size: 20px;
+
+// hover
+// $hover-color: #ebf3f9;
+
+// 下边的语法，可以把变量导出去，供js使用
+// :export {
+// 	backgroundColor: $background-color;
+// }
+
+//与webpack.base.babel中的url-loader的exclude的文件目录对应，这个目录放在public/asset/images下面，主要用于定制化需求需要替换logo的场景
+$baseImagePath: '/asset/images';
+
+///////////左侧菜单树色调
+$left-menu-background-color: #192a43;
+$left-menu-selected-color: #18e;
+$left-menu-hover-color: #245483;

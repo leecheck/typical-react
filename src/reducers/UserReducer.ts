@@ -1,15 +1,21 @@
-import * as types from '../constants/ActionTypes';
+export const USER = 'USER';
 
 const initialState = {
-    status:0,
-    info:'',
-    data:[]
+  status: 0,
+  info: '',
+  data: [],
+  user: null,
 };
-export default function LoginReducer(state = initialState, action:any){
-    switch (action.type) {
-        case types.USER:
-            return Object.assign({}, state, action);
-        default:
-            return Object.assign(state);
-    }
+export default function LoginReducer(state = initialState, action: any) {
+  switch (action.type) {
+    case USER:
+      return {
+        ...state,
+        user: {
+          name: 'user',
+        },
+      };
+    default:
+      return Object.assign(state);
+  }
 }
